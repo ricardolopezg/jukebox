@@ -178,7 +178,7 @@
         // console.log(song_queued);
    
       $("#audio").attr("src", song_queued.file_path);
-      audio.playbackRate = 4;
+      // audio.playbackRate = 4;
       $("#now_playing").text(jukebox.queued_songs[0].title + " - " + jukebox.queued_songs[0].artist)
       jukebox.play();
 
@@ -201,7 +201,7 @@
     // Play next song at new index
       $("#audio").attr("src", jukebox.queued_songs[current_song_index + 1].file_path);
       $("#now_playing").text(jukebox.queued_songs[current_song_index + 1].title + " - " + jukebox.queued_songs[current_song_index + 1].artist)
-        audio.playbackRate = 4;
+        // audio.playbackRate = 4;
         jukebox.play();
         }, false);
         i++;
