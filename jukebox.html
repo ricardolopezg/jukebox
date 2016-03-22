@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jukebox</title>
+  <link rel="stylesheet" type="text/css" href="jukebox.css">
+</head>
+<body>
+  <audio id = "audio" type="audio/mp3"></audio>
+  <audio id = "queued_audio" type="audio/mp3"></audio>
+
+<!-- CURRENT SONG -->
+  <h2>Now Playing: </h2>
+  <h2 id = "now_playing"></h2>
+
+<!-- AUDIO CONTROLS -->
+  <button class = "audio_controls1" id = "previous_btn">&#9664&#9664</button>
+  <button class = "audio_controls1" id = "play_btn">&#9654</button>
+  <button class = "audio_controls1" id = "next_btn">&#9654&#9654</button>
+  <button class = "audio_controls2" id = "pause_btn">&#9616&#9616</button>
+  <button class = "audio_controls2" id = "stop_btn">&#9608</button>
+
+<!-- QUEUE LIST -->
+  <div id = "queue_list">
+    <h3>Playlist</h3>
+    <button id = "play_queued_song">PLAY</button>
+    <p></p>
+  </div>
+
+<!-- JUKEBOX -->
+  <div id = "jukebox_container">
+    <img id = "jukebox" src="jukebox.png">
+  </div>
+
+
+<!-- PLAYABLE TRACK LIST -->
+  <ul id = "track_list1">
+    <button id = "song1"></button>
+    <button id = "song1_add_to_queue">Add</button><br><br>
+  </ul>
+  <ul id = "track_list2">
+    <button id = "song2_add_to_queue">Add</button>
+    <button id = "song2"></button><br><br>
+    <button id = "song3_add_to_queue">Add</button>
+    <button id = "song3"></button><br><br>
+    <button id = "song4_add_to_queue">Add</button>
+    <button id = "song4"></button><br><br>
+    <button id = "song5_add_to_queue">Add</button>
+    <button id = "song5"></button><br><br>
+  </ul>
+  <ul id = "track_list3">  
+    <button id = "song6"></button>
+    <button id = "song6_add_to_queue">Add</button><br><br>
+    <button id = "song7"></button>
+    <button id = "song7_add_to_queue">Add</button><br><br>
+    <button id = "song8"></button>
+    <button id = "song8_add_to_queue">Add</button><br><br>
+    <button id = "song9"></button>
+    <button id = "song9_add_to_queue">Add</button><br><br>
+  </ul>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="jukebox.js"></script>
+</body>
+</html>
